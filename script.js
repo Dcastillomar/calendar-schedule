@@ -1,4 +1,6 @@
 $(window).on("load");
+//$(document).ready("function");
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
@@ -18,7 +20,7 @@ $(function () {
   document.getElementById("dateTime").innerHTML = dayJsobject.format("MM/DD/YYYY h:mm A");
 
   var dayJsInner = dayjs();
-  var dayJsString = (dayJsInner.format("h A"));
+  var dayJsString = (dayJsInner.format("H"));
   var realTime = parseInt(dayJsString);
 
   console.log(realTime)
@@ -45,7 +47,7 @@ $(function () {
     document.getElementById("hour-8").style.backgroundColor = '#99C262';
   } else if (scheduleTime8 > realTime) {
     document.getElementById("hour-8").style.backgroundColor = '#F8D347';
-  } else (scheduleTime8 < realTime); {
+  } else {
     document.getElementById("hour-8").style.backgroundColor = '#FF6C60';
   }
 
@@ -56,7 +58,7 @@ $(function () {
     document.getElementById("hour-9").style.backgroundColor = '#99C262';
   } else if (scheduleTime9 > realTime) {
     document.getElementById("hour-9").style.backgroundColor = '#F8D347';
-  } else (scheduleTime9 < realTime); {
+  } else {
     document.getElementById("hour-9").style.backgroundColor = '#FF6C60';
   }
 
@@ -68,7 +70,7 @@ $(function () {
     document.getElementById("hour-10").style.backgroundColor = '#99C262';
   } else if (scheduleTime10 > realTime) {
     document.getElementById("hour-10").style.backgroundColor = '#F8D347';
-  } else (scheduleTime10 < realTime); {
+  } else {
     document.getElementById("hour-10").style.backgroundColor = '#FF6C60';
   }
 
@@ -79,7 +81,7 @@ $(function () {
     document.getElementById("hour-11").style.backgroundColor = '#99C262';
   } else if (scheduleTime11 > realTime) {
     document.getElementById("hour-11").style.backgroundColor = '#F8D347';
-  } else (scheduleTime11 < realTime); {
+  } else {
     document.getElementById("hour-11").style.backgroundColor = '#FF6C60';
   }
 
@@ -90,81 +92,81 @@ $(function () {
     document.getElementById("hour-12").style.backgroundColor = '#99C262';
   } else if (scheduleTime12 > realTime) {
     document.getElementById("hour-12").style.backgroundColor = '#F8D347';
-  } else (scheduleTime12 < realTime); {
+  } else {
     document.getElementById("hour-12").style.backgroundColor = '#FF6C60';
   }
 
-  var scheduleTime1 = 1;
+  var scheduleTime13 = 13;
   //var calendarTime1 = parseInt(scheduleTime1);
 
-  if (scheduleTime1 === realTime) {
-    document.getElementById("hour-1").style.backgroundColor = '#99C262';
-  } else if (scheduleTime1 > realTime) {
-    document.getElementById("hour-1").style.backgroundColor = '#F8D347';
-  } else (scheduleTime1 < realTime); {
-    document.getElementById("hour-1").style.backgroundColor = '#FF6C60';
+  if (scheduleTime13 === realTime) {
+    document.getElementById("hour-13").style.backgroundColor = '#99C262';
+  } else if (scheduleTime13 > realTime) {
+    document.getElementById("hour-13").style.backgroundColor = '#F8D347';
+  } else {
+    document.getElementById("hour-13").style.backgroundColor = '#FF6C60';
   }
 
-  var scheduleTime2 = 2;
+  var scheduleTime14 = 14;
   //var calendarTime2 = parseInt(scheduleTime2);
  
-    if (scheduleTime2 === realTime) {
-      document.getElementById("hour-2").style.backgroundColor = '#99C262';
-    } else if (scheduleTime2 > realTime) {
-      document.getElementById("hour-2").style.backgroundColor = '#F8D347';
-    } else (scheduleTime2 < realTime); {
-      document.getElementById("hour-2").style.backgroundColor = '#FF6C60';
+    if (scheduleTime14 === realTime) {
+      document.getElementById("hour-14").style.backgroundColor = '#99C262';
+    } else if (scheduleTime14 > realTime) {
+      document.getElementById("hour-14").style.backgroundColor = '#F8D347';
+    } else {
+      document.getElementById("hour-14").style.backgroundColor = '#FF6C60';
     }
 
-  var scheduleTime3 = 3;
+  var scheduleTime15 = 15;
   //var calendarTime3 = parseInt(scheduleTime3);
 
 
-  if (scheduleTime3 === realTime) {
-      document.getElementById("hour-3").style.backgroundColor = '#99C262';
-    } else if (scheduleTime3 > realTime) {
-      document.getElementById("hour-3").style.backgroundColor = '#F8D347';
-    } else (scheduleTime3< realTime); {
-      document.getElementById("hour-3").style.backgroundColor = '#FF6C60';
+  if (scheduleTime15 === realTime) {
+      document.getElementById("hour-15").style.backgroundColor = '#99C262';
+    } else if (scheduleTime15 > realTime) {
+      document.getElementById("hour-15").style.backgroundColor = '#F8D347';
+    } else {
+      document.getElementById("hour-15").style.backgroundColor = '#FF6C60';
     }
 
-  var scheduleTime4 = 4;
+  var scheduleTime16 = 16;
   //var calendarTime4= parseInt(scheduleTime4);
 
-  if (realTime === scheduleTime4) {
-    document.getElementById("hour-4").style.backgroundColor = '#99C262';
-  } else if (scheduleTime4 > realTime) {
-    document.getElementById("hour-4").style.backgroundColor = '#F8D347';
-  } else (scheduleTime4 < realTime); {
-    document.getElementById("hour-4").style.backgroundColor = '#FF6C60';
+  if (realTime === scheduleTime16) {
+    document.getElementById("hour-16").style.backgroundColor = '#99C262';
+  } else if (scheduleTime16 > realTime) {
+    document.getElementById("hour-16").style.backgroundColor = '#F8D347';
+  } else {
+    document.getElementById("hour-16").style.backgroundColor = '#FF6C60';
   }
 
 console.log (realTime)
 
 
-  var scheduleTime5 = 5;
+  var scheduleTime17 = 17;
   //var calendarTime5 = parseInt(scheduleTime5);
 
 
-  if (scheduleTime5 === realTime) {
-    document.getElementById("hour-5").style.backgroundColor = '#99C262';
-  } else if (scheduleTime5 > realTime) {
-    document.getElementById("hour-5").style.backgroundColor = '#F8D347';
-  } else (scheduleTime5 < realTime); {
-    document.getElementById("hour-5").style.backgroundColor = '#FF6C60';
+  if (scheduleTime17 === realTime) {
+    document.getElementById("hour-17").style.backgroundColor = '#99C262';
+  } else if (scheduleTime17 > realTime) {
+    document.getElementById("hour-17").style.backgroundColor = '#F8D347';
+  } else  {
+    document.getElementById("hour-17").style.backgroundColor = '#FF6C60';
   }
 
  
 
-  var scheduleTime6 = 6;
+  var scheduleTime18 = 18;
   //var calendarTime6 = parseInt(scheduleTime6);
  
-    if (scheduleTime6 === realTime) {
-      document.getElementById("hour-6").style.backgroundColor = '#99C262';
-    } else if (scheduleTime6 > realTime) {
-      document.getElementById("hour-6").style.backgroundColor = '#F8D347';
-    } else (scheduleTime6 < realTime); {
-      document.getElementById("hour-6").style.backgroundColor = '#FF6C60';
+    if (scheduleTime18 == realTime) {
+      document.getElementById("hour-18").style.backgroundColor = '#99C262';
+    } else if (scheduleTime18 > realTime) {
+      document.getElementById("hour-18").style.backgroundColor = '#F8D347';
+    } else {
+      document.getElementById("hour-18").style.backgroundColor = '#FF6C60';
     }
 
   //
