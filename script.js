@@ -1,10 +1,6 @@
 //renders all elements in html before running the code
 $(document).ready("function");
 
-
-
-
-
 $(function () {
   //pulls the date and time for top of page
   var dayJsobject = dayjs()
@@ -28,15 +24,17 @@ $(function () {
   
 
   //SAVE BUTTON
-  var saveButton= document.getElementById("button")
-  saveButton.addEventListener("click", function(){
-  var data = JSON.parse(localStorage.getItem('data'));
-  document.getElementById('hour-8').textContent =data.events
-  });
+  $(".saveBtn").on("click", function(){
+    var textValue = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+    
+    localStorage.setItem(time, textValue);
+    localStorage.getItem();
+  })
 
 
 
-  //compares the times of the schedule to the current time
+  //compares the times of the schedule to the current time and changes color based on past, present, future
   var scheduleTime8 = 8;
   if (scheduleTime8 === realTime) {
     document.getElementById("hour-8").style.backgroundColor = '#ff6961';
@@ -120,20 +118,20 @@ $(function () {
 
   var scheduleTime17 = 17;
   if (scheduleTime17 === realTime) {
-    document.getElementById("hour-17").style.backgroundColor = '#99C262';
+    document.getElementById("hour-17").style.backgroundColor = '#ff6961';
   } else if (scheduleTime17 > realTime) {
     document.getElementById("hour-17").style.backgroundColor = '#77dd77';
   } else {
-    document.getElementById("hour-17").style.backgroundColor = '#FF6C60';
+    document.getElementById("hour-17").style.backgroundColor = '#d3d3d3';
   }
 
   var scheduleTime18 = 18;
   if (scheduleTime18 == realTime) {
-    document.getElementById("hour-18").style.backgroundColor = '#99C262';
+    document.getElementById("hour-18").style.backgroundColor = '#ff6961';
   } else if (scheduleTime18 > realTime) {
     document.getElementById("hour-18").style.backgroundColor = '#77dd77';
   } else {
-    document.getElementById("hour-18").style.backgroundColor = '#FF6C60';
+    document.getElementById("hour-18").style.backgroundColor = '#d3d3d3';
   }
 
 
